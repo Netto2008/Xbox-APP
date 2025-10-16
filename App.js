@@ -4,6 +4,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 
 
+
 import TelaInicial from './Componets/TelaInicial/index.js';
 import TelaConsole from './Componets/TelaConsole/index.js';
 import TelaJogos from './Componets/TelaJogos/index.js';

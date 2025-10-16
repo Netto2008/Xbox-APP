@@ -1,14 +1,13 @@
 import React from 'react';
 import { View, Text, StyleSheet, Image, Pressable } from 'react-native';
+import imgfundo from '../../assets/logo.png';
 
 export default function TelaInicial({ navigation }) {
   return (
     <View style={styles.container}>
       {/* Logo Xbox */}
       <View style={styles.logoContainer}>
-        <View style={styles.logoCircle}>
-          <Text style={styles.logoText}>X</Text>
-        </View>
+        <Image source={imgfundo} style={styles.logoImage} />
         <Text style={styles.title}>Xbox</Text>
       </View>
 
@@ -57,7 +56,7 @@ export default function TelaInicial({ navigation }) {
       >
         <View style={styles.buttonContent}>
           <View style={styles.iconPlaceholder}>
-            <Text style={styles.iconText}>☁️</Text>
+            <Text style={styles.iconText}><Image source={require("../../assets/xcloud-1.png")} style={styles.Image}/></Text>
           </View>
           <View style={styles.buttonTextContainer}>
             <Text style={styles.buttonTitle}>Confira a</Text>
@@ -81,13 +80,10 @@ const styles = StyleSheet.create({
     marginTop: 40,
     marginBottom: 20,
   },
-  logoCircle: {
+  logoImage: {
     width: 80,
     height: 80,
     borderRadius: 40,
-    backgroundColor: '#107c10',
-    justifyContent: 'center',
-    alignItems: 'center',
     marginBottom: 10,
   },
   logoText: {
